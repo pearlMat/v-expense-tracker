@@ -24,13 +24,10 @@ import MobileMenu from './mobile-menu.vue';
 			</div>
 			<ul class=" flex items-center space-x-10 h-full">
 				<router-link :to="{ name: 'home' }">
-					<div class="">Home</div>
-				</router-link>
-				<router-link :to="{ name: 'home' }">
 					<div class="">About</div>
 				</router-link>
-				<router-link :to="{ name: 'home' }">
-					<div class="">Blog</div>
+				<router-link :to="{ name: 'register' }">
+					<div class="">Register</div>
 				</router-link>
 				
 
