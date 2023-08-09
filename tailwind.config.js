@@ -6,6 +6,9 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
   darkMode: 'class',
+  daisyui: {
+    themes: [ "garden"],
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -13,4 +16,5 @@ module.exports = {
       },
     },
   },
+  plugins: [require("daisyui")],
 };
