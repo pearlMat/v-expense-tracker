@@ -1,6 +1,7 @@
 <script setup >
+import { ref } from 'vue';
 
-
+const isOpen = ref(false);
 const toggleMenu = () => {
     isOpen.value = !isOpen.value;
 };
