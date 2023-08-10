@@ -8,7 +8,7 @@
     <div class="hero-content text-center">
       <div class="flex flex-col">
         <h1 class="mb-4 text-6xl text-primary">Simple way</h1>
-        <span class="mb-4 text-6xl font-light leading-normal ">to manage <span class="text-primary text-6xl font-normal">personal
+        <span class="mb-4 text-6xl font-light leading-normal  ">to manage <span class="text-primary text-6xl font-normal">personal
             finances</span></span>
 
         <div class=" space-x-2 space-y-2">
@@ -22,7 +22,7 @@
 
   </div>
 
-  <section class="mx-auto w-4/5 mt-24 pb-6">
+  <section class="mx-auto w-4/5 mt-24 mb-24">
     <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
       <div class="bg-amber-100 flex flex-col items-center justify-center py-6">
         <img src="../assets/img/group.png" />
