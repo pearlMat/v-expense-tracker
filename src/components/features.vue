@@ -6,7 +6,7 @@
         <h2 class="font-medium text-4xl text-center">Features our users love</h2>
 
         <div class="mt-10 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/multiscreen.png" />
 
@@ -17,7 +17,7 @@
 
             </div>
 
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/data-transfer.png" />
 
@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/traveling.png" />
 
@@ -39,7 +39,7 @@
 
             </div>
 
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/calendar.png" />
 
@@ -50,7 +50,7 @@
 
             </div>
 
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/money-bag.png" />
 
@@ -61,7 +61,7 @@
 
             </div>
 
-            <div class="flex flex-col items-center lg:w-4/5">
+            <div class="flex flex-col items-center lg:w-4/5 mx-auto">
                 <div class="bg-amber-100 p-2 rounded-xl">
                     <img src="../assets/img/free.png" />
 
