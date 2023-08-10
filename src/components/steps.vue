@@ -9,14 +9,14 @@
 
             <div class="lg:w-4/5">
                 <h3 class="font-medium text-4xl">Simple money tracker</h3>
-                <p class="leading-normal ">It takes seconds to record daily transactions. Put them into clear
+                <p class="leading-normal mt-4 ">It takes seconds to record daily transactions. Put them into clear
                     and visualized categories such as
                     Expense: Food, Shopping or Income: Salary, Gift.</p>
             </div>
 
             <div class="lg:w-4/5 lg:order-3 md:order-4">
                 <h3 class="font-medium text-4xl">Painless budgeting</h3>
-                <p class="leading-normal ">It takes seconds to record daily transactions. Put them into clear
+                <p class="leading-normal mt-4 ">It takes seconds to record daily transactions. Put them into clear
                     and visualized categories such as Expense: Food, Shopping or Income: Salary, Gift.</p>
             </div>
 
@@ -37,7 +37,7 @@
 
             <div class="lg:w-4/5 lg:order-6">
                 <h3 class="font-medium text-4xl">The whole picture in one place</h3>
-                <p class="leading-normal ">One report to give a clear view on your spending patterns.
+                <p class="leading-normal mt-4 ">One report to give a clear view on your spending patterns.
                     Understand where your money comes and goes with easy-to-read graphs.</p>
             </div>
 
