@@ -5,6 +5,7 @@ import Steps from '@/components/steps.vue';
 import Features from '@/components/features.vue';
 import Testimonials from '@/components/testimonials.vue';
 import Action from '@/components/action.vue';
+import Footer from '@/components/footer.vue';
 
 </script>
 
@@ -15,6 +16,7 @@ import Action from '@/components/action.vue';
   <Features />
   <Testimonials />
   <Action />
+  <Footer />
 </template>
 
 <style>
