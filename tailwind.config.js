@@ -5,6 +5,10 @@ module.exports = {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
+  screens: {
+    sm: '375px',
+   
+  },
   darkMode: 'class',
   daisyui: {
     themes: [ "garden"],
