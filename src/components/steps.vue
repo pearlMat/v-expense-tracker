@@ -14,13 +14,13 @@
                     Expense: Food, Shopping or Income: Salary, Gift.</p>
             </div>
 
-            <div class="lg:w-4/5 lg:order-3 md:order-4 mx-auto">
+            <div class="lg:w-4/5 lg:order-3 md:order-4 order-4 mx-auto">
                 <h3 class="font-medium text-4xl">Painless budgeting</h3>
                 <p class="leading-normal mt-4 ">It takes seconds to record daily transactions. Put them into clear
                     and visualized categories such as Expense: Food, Shopping or Income: Salary, Gift.</p>
             </div>
 
-            <div class="lg:w-4/5 lg:order-4 md:order-3 mx-auto">
+            <div class="lg:w-4/5 lg:order-4 md:order-3 order-3 mx-auto">
                 <img src="../assets/img/step2.jpg" class="shadow-2xl" />
 
             </div>
