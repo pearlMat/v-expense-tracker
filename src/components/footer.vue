@@ -11,24 +11,24 @@
 
             <div class="">
                 <ul class=" flex items-center space-x-10 ">
-				<router-link :to="{ name: 'home' }">
-					<div class="">About</div>
-				</router-link>
-				
-                <router-link :to="{ name: 'register' }">
-					<div class="">Blog</div>
-				</router-link>
+                    <router-link :to="{ name: 'home' }">
+                        <div class="">About</div>
+                    </router-link>
 
-                <router-link :to="{ name: 'register' }">
-					<div class="">Register</div>
-				</router-link>
+                    <router-link :to="{ name: 'register' }">
+                        <div class="">Blog</div>
+                    </router-link>
 
-                <router-link :to="{ name: 'register' }">
-					<div class="">Terms</div>
-				</router-link>
-				
+                    <router-link :to="{ name: 'register' }">
+                        <div class="">Register</div>
+                    </router-link>
 
-			</ul>
+                    <router-link :to="{ name: 'register' }">
+                        <div class="">Terms</div>
+                    </router-link>
+
+
+                </ul>
 
             </div>
 
