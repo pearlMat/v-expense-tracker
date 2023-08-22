@@ -3,12 +3,18 @@ import NavBar from '@/components/nav-bar.vue';
 import { reactive } from 'vue';
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, minLength } from '@vuelidate/validators'
+import { useStore } from "vuex";
 
+const store = useStore();
 const state = reactive({
     firstName: "",
     lastName: "",
     email: "",
-    password: ""
+    password: "",
+    passwordLength: 6,
+    successful: false,
+    loading: false,
+    message: "",
 })
 
 const rules = {
@@ -27,7 +33,26 @@ const onSubmit = async () => {
         return
     }
 
-    console.log(state)
+    state.message = "";
+    state.successful = false;
+    state.loading = true;
+
+    store.dispatch("auth/register", state.firstName).then(
+        (data) => {
+            state.message = data.message;
+            state.successful = true;
+            state.loading = false;
+        },
+        (error) => {
+            state.message =
+                (error.response &&
+                    error.response.data &&
+                    error.response.data.message) ||
+                error.message ||
+                error.toString();
+            state.successful = false;
+            state.loading = false;
+        })
 
 }
 

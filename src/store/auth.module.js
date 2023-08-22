@@ -1,5 +1,5 @@
 import repositoryFactory from "@/repositories/repository-factory";
-const authRepository = Repository.get("auth");
+const authRepository = repositoryFactory.get("auth");
 
 const user = JSON.parse(localStorage.getItem('user'));
 const initialState = user
