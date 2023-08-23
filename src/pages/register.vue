@@ -1,20 +1,20 @@
 <script setup>
 import NavBar from '@/components/nav-bar.vue';
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, minLength } from '@vuelidate/validators'
 import { useStore } from "vuex";
+import {useRouter} from "vue-router";
 
+const router = useRouter();
 const store = useStore();
+const passwordLength = 6;
 const state = reactive({
     firstName: "",
     lastName: "",
     email: "",
     password: "",
-    passwordLength: 6,
-    successful: false,
-    loading: false,
-    message: "",
+
 })
 
 const rules = {
@@ -27,31 +27,39 @@ const rules = {
 }
 const v$ = useVuelidate(rules, state)
 
+
+const successful = ref(false);
+const loading = ref(false);
+const message = ref("");
+
 const onSubmit = async () => {
     const result = await v$.value.$validate()
     if (!result) {
         return
     }
 
-    state.message = "";
-    state.successful = false;
-    state.loading = true;
+    message.value = "";
+    successful.value = false;
+    loading.value = true;
 
-    store.dispatch("auth/register", state.firstName).then(
+    store.dispatch("auth/register", state).then(
         (data) => {
-            state.message = data.message;
-            state.successful = true;
-            state.loading = false;
+            console.log(data)
+            message.value = data.message;
+            successful.value = true;
+            loading.value = false;
+            router.push('/');
         },
         (error) => {
-            state.message =
+            message.value =
                 (error.response &&
                     error.response.data &&
                     error.response.data.message) ||
                 error.message ||
                 error.toString();
-            state.successful = false;
-            state.loading = false;
+            console.log(error)
+            successful.value = false;
+            loading.value = false;
         })
 
 }

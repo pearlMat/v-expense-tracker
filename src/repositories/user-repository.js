@@ -1,4 +1,4 @@
-import Client from "./clients/axios-client";
+/*import Client from "./clients/axios-client";
 
 const resource = '/users';
 
@@ -20,4 +20,4 @@ export default {
     },
 
     // MANY OTHER ENDPOINT RELATED STUFFS
-};
+};*/

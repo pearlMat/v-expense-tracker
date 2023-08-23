@@ -1,9 +1,9 @@
-import userRepository from "./user-repository";
+//import userRepository from "./user-repository";
 import authRepository from "./auth-repository";
 
 const repositories = {
     
-    'users': userRepository,
+   // 'users': userRepository,
     'auth': authRepository
 }
 export default {

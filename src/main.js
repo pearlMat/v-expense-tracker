@@ -8,7 +8,7 @@ import { routes } from '@/routes.js';
 import store from './store';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.VITE_BASE_PUBLIC_PATH),
+  history: createWebHistory(),
   routes,
 });
 
