@@ -1,10 +1,11 @@
 <script setup>
 import NavBar from '@/components/nav-bar.vue';
+import { notify } from "notiwind";
 import { reactive, ref } from 'vue';
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, minLength } from '@vuelidate/validators'
 import { useStore } from "vuex";
-import {useRouter} from "vue-router";
+import { useRouter } from "vue-router";
 
 const router = useRouter();
 const store = useStore();
@@ -48,6 +49,11 @@ const onSubmit = async () => {
             message.value = data.message;
             successful.value = true;
             loading.value = false;
+            notify({
+                group: "foo",
+                title: "Success",
+                text: "Your account was registered!"
+            }, 4000)
             router.push('/');
         },
         (error) => {
@@ -57,12 +63,18 @@ const onSubmit = async () => {
                     error.response.data.message) ||
                 error.message ||
                 error.toString();
-            console.log(error)
+                notify({
+                group: "error",
+                title: "Error",
+                text:   error.message
+            }, 4000)
             successful.value = false;
             loading.value = false;
         })
 
 }
+
+
 
 
 </script>
@@ -117,7 +129,9 @@ const onSubmit = async () => {
                             </label>
                         </div>
                         <div class="form-control mt-6">
-                            <button class="btn btn-primary" type="submit">Login</button>
+                            <span v-if="loading" class="loading loading-ring loading-lg"></span>
+                            <button v-else class="btn btn-primary" type="submit">Signup</button>
+
                         </div>
 
                     </form>
