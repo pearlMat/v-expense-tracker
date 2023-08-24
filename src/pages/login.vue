@@ -43,7 +43,7 @@ const onSubmit = async () => {
     successful.value = false;
     loading.value = true;
 
-    store.dispatch("auth/register", state).then(
+    store.dispatch("auth/login", state).then(
         (data) => {
             console.log(data)
             message.value = data.message;
@@ -52,7 +52,7 @@ const onSubmit = async () => {
             notify({
                 group: "foo",
                 title: "Success",
-                text: "Your account was registered!"
+                text: "Logged In!"
             }, 4000)
             router.push('/');
         },
@@ -125,16 +125,12 @@ const onSubmit = async () => {
                                 <div class="error-msg text-error">{{ error.$message }}</div>
                             </div>
                             <label class="label">
-                                <router-link :to="{ name: 'login' }">
-                                    <div class="label-text-alt link link-hover">Have an account? Login</div>
-                                </router-link>
-
-                              
+                                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
                         <div class="form-control mt-6">
                             <span v-if="loading" class="loading loading-ring loading-lg"></span>
-                            <button v-else class="btn btn-primary" type="submit">Signup</button>
+                            <button v-else class="btn btn-primary" type="submit">Login</button>
 
                         </div>
 
