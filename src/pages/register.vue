@@ -54,7 +54,7 @@ const onSubmit = async () => {
                 title: "Success",
                 text: "Your account was registered!"
             }, 4000)
-            router.push('/');
+            router.push('/login');
         },
         (error) => {
             message.value =
